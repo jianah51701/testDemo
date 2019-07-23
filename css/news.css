@@ -1,0 +1,620 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  overflow: scroll;
+  font-family: "微软雅黑";
+  background: #fff;
+}
+img {
+  max-width: 100%;
+}
+/*清浮动*/
+.clear:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+/*截字符*/
+.fontOver {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+em,
+i {
+  font-style: normal;
+}
+[v-cloak] {
+  display: none;
+}
+.bigBox {
+  position: relative;
+  height: 100%;
+}
+.messageBox {
+  overflow: auto;
+  z-index: 1;
+}
+.newsTitle {
+  height: 14.13333333vw;
+  background: url(../image/jn-image/bg.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 0 3.33333333vw;
+}
+.newsback {
+  width: 3.46666667vw;
+  margin-top: 4vw;
+}
+.newsback img {
+  width: 100%;
+}
+.person {
+  width: 6.26666667vw;
+  height: 6.26666667vw;
+  margin-top: 4vw;
+}
+.person img {
+  width: 100%;
+}
+.biaoti {
+  width: 20vw;
+  height: 5.33333333vw;
+  margin-top: 4.66666667vw;
+  margin-left: 34.66666667vw;
+}
+.biaoti img {
+  width: 100%;
+}
+.newsMenu {
+  font-size: 3.46666667vw;
+  color: #636c74;
+  height: 11.57894737vw;
+  line-height: 12.57142857, 5vw;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  padding-left: 2.66666667vw;
+}
+.newsActive a {
+  color: #2c93f2;
+  font-weight: bold;
+}
+.swiper-slide a {
+  color: #636c74;
+}
+.newsMore {
+  position: absolute;
+  right: 3.33333333vw;
+  top: 4vw;
+  width: 4.26666667vw !important;
+  height: 4vw !important;
+}
+.newsMore img {
+  width: 100% !important;
+}
+.newsContent {
+  padding: 0 4.66666667vw 13.33333333vw;
+}
+.newsUl li {
+  height: 27.33333333vw;
+  border-bottom: 1px solid #f9fafb;
+}
+.newsZi {
+  margin-top: 4.66666667vw;
+  height: 13.33333333vw;
+  font-size: 4.53333333vw;
+  color: #222222;
+  line-height: 6.66666667vw;
+  overflow: hidden;
+}
+.newsTime {
+  font-size: 2.93333333vw;
+  color: #aab2b9;
+  margin-top: 3.33333333vw;
+}
+.footMenu {
+  width: 100%;
+  height: 13.33333333vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 13;
+  background: #FFFFFF;
+  border-top: 1px solid #e0e0e0;
+}
+.footUl li {
+  width: 20%;
+  text-align: center;
+}
+.footUl li span {
+  font-size: 2.66666667vw;
+  color: #9b9b9b;
+}
+.footImg {
+  width: 5.33333333vw;
+  height: 5.33333333vw;
+  margin: 1.33333333vw auto 0;
+}
+.footImg img {
+  width: 100%;
+  height: 100%;
+}
+.footImgOne {
+  width: 13.86666667vw;
+  height: 7.33333333vw;
+  margin: 3.33333333vw auto 0;
+}
+.footImgOne img {
+  width: 100%;
+  height: 100%;
+}
+.currentContent {
+  padding: 0 4.66666667vw 13.33333333vw;
+}
+.currentnewsUl li {
+  border-bottom: 1px solid #f9fafb;
+  padding-bottom: 5.33333333vw;
+}
+.newsLeft {
+  width: 54.66666667vw;
+}
+.newsRight {
+  width: 29.86666667vw;
+  height: 19.6vw;
+  margin-top: 5.33333333vw;
+}
+.newsRight img {
+  width: 100%;
+  height: 100%;
+}
+.currentImgbox {
+  width: 29.86666667vw;
+  height: 19.6vw;
+  margin-right: 0.4vw;
+}
+.currentImgbox img {
+  width: 100%;
+  height: 100%;
+}
+.currentImgbox:last-child {
+  margin-right: 0;
+}
+.boxImg {
+  margin-top: 4vw;
+  width: 100%;
+  height: 51.33333333vw;
+}
+.boxImg img {
+  width: 100%;
+  height: 100%;
+}
+.newsMenuTwo {
+  margin-top: 2.66666667vw;
+  font-size: 2.66666667vw;
+  padding: 0 1.33333333vw;
+}
+.newsMenuTwoStyle {
+  background: #f9f9f9 !important;
+  border-radius: 3px !important;
+  color: #939395 !important;
+}
+.newsMenuTwoStyleActive {
+  background: #2c93f2 !important;
+  border-radius: 3px !important;
+  color: #fff !important;
+}
+.outBox {
+  position: relative;
+  z-index: 1;
+}
+.oppbigBox {
+  background: #f1f1f1;
+  position: relative;
+  z-index: 2;
+}
+.oppmessageBox {
+  position: relative;
+  z-index: 4;
+}
+.search {
+  margin-left: 4vw;
+  margin-top: 3.33333333vw;
+  position: relative;
+}
+.search input {
+  width: 69.06666667vw;
+  height: 6.93333333vw;
+  padding-left: 8vw;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  color: #FFFFFF;
+}
+.search input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.searchImg {
+  width: 3.6vw;
+  height: 3.6vw;
+  position: absolute;
+  left: 2.66666667vw;
+  top: 0.66666667vw;
+  z-index: 2;
+}
+.searchImg img {
+  width: 100%;
+  height: 100%;
+}
+.oppContent {
+  position: relative;
+  height: 40vw;
+}
+.opportunityImg {
+  height: 40vw;
+  position: absolute;
+  z-index: 1;
+}
+.opportunityImg img {
+  width: 100%;
+  height: 100%;
+}
+.publishBtn {
+  position: absolute;
+  width: 20.4vw;
+  height: 7.46666667vw;
+  background: #301757;
+  color: #FFFFFF;
+  line-height: 7.46666667vw;
+  text-align: center;
+  font-size: 3.2vw;
+  z-index: 3;
+  border-radius: 3.73333333vw;
+  top: 3.33333333vw;
+  right: 2.66666667vw;
+}
+.oppMenu {
+  padding: 4.66666667vw 0;
+  background: #FFFFFF;
+}
+.oppMenuUl li {
+  width: 25%;
+  text-align: center;
+}
+.oppMenuImg {
+  margin: 0 auto;
+  width: 10.13333333vw;
+  height: 10.13333333vw;
+}
+.oppMenuImg img {
+  width: 100%;
+  height: 100%;
+}
+.oppMenuImg3 {
+  margin: 0 auto;
+  width: 8vw;
+  height: 10.13333333vw;
+}
+.oppMenuImg3 img {
+  width: 100%;
+}
+.oppMenuImg4 {
+  margin: 0 auto;
+  width: 12vw;
+  height: 10.13333333vw;
+}
+.oppMenuImg4 img {
+  width: 100%;
+}
+.oppZi {
+  margin-top: 3.33333333vw;
+  font-size: 3.46666667vw;
+  color: #3f3f3f;
+}
+.partnerBox {
+  margin-top: 2vw;
+  height: 16.53333333vw;
+  background: #FFFFFF;
+  padding: 0 3.33333333vw;
+}
+.partnerImg {
+  width: 8.53333333vw;
+  height: 8.53333333vw;
+  border-radius: 4.26666667vw;
+  overflow: hidden;
+  margin-top: 4.4vw;
+}
+.partnerZi {
+  margin-left: 2.66666667vw;
+  margin-top: 4.4vw;
+}
+.partnerName {
+  font-size: 3.46666667vw;
+  color: #000000;
+}
+.partnerAdss {
+  font-size: 2.93333333vw;
+  color: #676767;
+}
+.partnerZitwo {
+  font-size: 2.93333333vw;
+  color: #2c93f2;
+  line-height: 16.53333333vw;
+}
+.hotOpp {
+  margin-top: 2vw;
+  background: #FFFFFF;
+  padding: 3.33333333vw 2.66666667vw 13.33333333vw;
+}
+.titleBox {
+  height: 5.6vw;
+  line-height: 5.6vw;
+}
+.titleName {
+  border-left: 1.33333333vw solid #24afff;
+  border-radius: 0.4vw;
+  padding-left: 2vw;
+  font-size: 4vw;
+  color: #000000;
+}
+.more {
+  font-size: 3.2vw;
+  color: #000000;
+}
+.hotMenu {
+  height: 100%;
+}
+.hotMenu li {
+  padding: 4vw 0;
+  height: 42.4vw;
+  border-bottom: 1px solid #f2f2f2;
+}
+.topBox {
+  height: 12.8vw;
+}
+.tuijie {
+  width: 4.26666667vw;
+  height: 8.53333333vw;
+  margin-top: 1.33333333vw;
+  margin-left: 1.33333333vw;
+}
+.tuijie img {
+  width: 100%;
+  height: 100%;
+}
+.hotHead {
+  margin-left: 3.33333333vw;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 6vw;
+  overflow: hidden;
+}
+.hotHead img {
+  width: 100%;
+  height: 100%;
+}
+.hotMessage {
+  margin-left: 2.66666667vw;
+}
+.hotName {
+  font-size: 3.46666667vw;
+  color: #000000;
+  line-height: 6.93333333vw;
+}
+.middleBox {
+  margin-top: 5.33333333vw;
+}
+.hotContent {
+  font-size: 3.73333333vw;
+  color: #000000;
+  line-height: 5.33333333vw;
+  overflow: hidden;
+}
+.hotAdress {
+  font-size: 2.93333333vw;
+  color: #676767;
+  line-height: 6vw;
+}
+.bottomBox {
+  margin-top: 3.73333333vw;
+  height: 4.93333333vw;
+  line-height: 4.93333333vw;
+}
+.eyeBox {
+  margin-top: 1.06666667vw;
+  width: 4vw;
+  height: 2.93333333vw;
+}
+.eyeBox img {
+  width: 100%;
+  height: 100%;
+}
+.bottomZi {
+  margin: 1.06666667vw 3.73333333vw 0 1.86666667vw;
+  font-size: 2.93333333vw;
+  color: #b0b0b0;
+}
+.zanBox {
+  margin-top: 0.8vw;
+  width: 4vw;
+  height: 3.73333333vw;
+}
+.zanBox img {
+  width: 100%;
+  height: 100%;
+}
+.mesBox {
+  margin-top: 1.06666667vw;
+  width: 4vw;
+  height: 4vw;
+}
+.mesBox img {
+  width: 100%;
+  height: 100%;
+}
+.publishOpp {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(102, 102, 102, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+.tankuang {
+  width: 93.33333333vw;
+  height: 58.66666667vw;
+  padding-top: 13.33333333vw;
+  border-radius: 2.66666667vw;
+  margin: auto;
+  background: #FFFFFF;
+  margin-top: 46.66666667vw;
+}
+.closeImg {
+  width: 10.66666667vw;
+  height: 10.66666667vw;
+  margin: 5.33333333vw auto 0;
+}
+.closeImg img {
+  width: 100%;
+  height: 100%;
+}
+.xuBox {
+  margin-left: 17.33333333vw;
+  width: 20.26666667vw;
+  text-align: center;
+}
+.xuImg {
+  width: 20.26666667vw;
+  height: 20.26666667vw;
+  border-radius: 10.13333333vw;
+}
+.xuImg img {
+  width: 100%;
+  height: 100%;
+}
+.xuZi {
+  font-size: 3.46666667vw;
+  color: #a7a7a7;
+  margin-top: 4.66666667vw;
+}
+.tipMessage {
+  padding: 0 8.53333333vw;
+  color: #0d0d0d;
+  font-size: 3.46666667vw;
+  margin-top: 6.66666667vw;
+  line-height: 6.13333333vw;
+  text-align: center;
+}
+.serachUl li {
+  height: 38vw;
+  padding: 4vw;
+  background: #FFFFFF;
+  margin-bottom: 2.66666667vw;
+}
+.hotHeadOne {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 6vw;
+  overflow: hidden;
+}
+.hotHeadOne img {
+  width: 100%;
+  height: 100%;
+}
+.blueColor {
+  color: #2c93f2;
+}
+.searchLeft {
+  width: 70.26666667vw;
+  height: 16vw;
+}
+.searchTitle {
+  margin-top: 4.8vw;
+  width: 100%;
+  height: 5.33333333vw;
+  line-height: 5.33333333vw;
+  overflow: hidden;
+  font-size: 3.46666667vw;
+  color: #232323;
+}
+.searchAdss {
+  margin-top: 2.4vw;
+  width: 100%;
+  height: 5.33333333vw;
+  font-size: 3.46666667vw;
+  color: #797979;
+  overflow: hidden;
+}
+.searchRight {
+  width: 18.66666667vw;
+  height: 14.66666667vw;
+  margin-top: 1.33333333vw;
+}
+.searchRight img {
+  width: 100%;
+  height: 100%;
+}
+.finaceBox {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+.finaceCoontent {
+  padding: 0 4vw;
+  background: #FFFFFF;
+}
+.finaceTitle {
+  height: 21.33333333vw;
+  background: url(../image/jn-image/bg.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 0 3.33333333vw;
+}
+.finaceMeauOne {
+  height: 7.06666667vw;
+  margin-top: 3.06666667vw;
+}
+.finaceUlOne li {
+  width: 25%;
+  text-align: center;
+  line-height: 6.66666667vw;
+  font-size: 3.46666667vw;
+  color: #ffffff;
+}
+.finaceUlOneActive {
+  color: #fffe69;
+  border-bottom: 0.8vw solid #fffe69;
+}
+.finaceMeau {
+  background: #FFFFFF;
+  margin-top: 0.66666667vw;
+}
+.finaceUl li {
+  width: 49.7%;
+  padding: 2.93333333vw 0;
+  text-align: center;
+  font-size: 3.46666667vw;
+  border-bottom: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+  color: #666666;
+}
+.finaceUl li:last-child {
+  border-right: 0;
+}

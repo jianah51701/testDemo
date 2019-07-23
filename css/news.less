@@ -1,0 +1,627 @@
+
+*{
+   margin: 0;
+  padding: 0;
+}
+html,body {
+  width: 100%;
+  overflow: scroll;
+  font-family: "微软雅黑";
+  background: #fff;
+}
+img {
+  max-width: 100%;
+}
+/*清浮动*/
+.clear:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.pull-left{float: left;}
+.pull-right{float: right;}
+/*截字符*/
+.fontOver {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+ul,li{
+  list-style: none;
+}
+a{text-decoration: none;}
+em,i {
+  font-style: normal;
+}
+ [v-cloak] {
+  display: none;
+}
+
+//最新政策
+.bigBox{
+    position: relative;
+    height: 100%;
+}
+.messageBox{
+    overflow: auto;
+    z-index: 1;
+}
+.newsTitle{
+    height: 106/7.5vw;
+    background: url(../image/jn-image/bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 0 25/7.5vw;
+}
+.newsback{
+    width: 26/7.5vw;
+    margin-top: 30/7.5vw;
+    img{
+        width: 100%;
+    }
+}
+.person{
+    width: 47/7.5vw;
+    height: 47/7.5vw;
+    margin-top: 30/7.5vw;
+    img{
+        width: 100%;
+    }
+}
+.biaoti{
+    width: 150/7.5vw;
+    height: 40/7.5vw;
+    margin-top: 35/7.5vw;
+    margin-left: 260/7.5vw;
+    img{
+        width: 100%;
+    }
+}
+.newsMenu{
+    font-size: 26/7.5vw;
+    color: #636c74;
+    height: 88/7.6vw;
+    line-height: 88/7,5vw;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    padding-left: 20/7.5vw;
+}
+.newsActive a{
+    color: #2c93f2;
+    font-weight: bold;
+}
+.swiper-slide a{color: #636c74;}
+.newsMore{
+    position: absolute;
+    right: 25/7.5vw;
+    top: 30/7.5vw;
+    width: 32/7.5vw !important;
+    height: 30/7.5vw !important;
+    img{
+        width: 100% !important;
+    }
+}
+.newsContent{
+    padding: 0 35/7.5vw 100/7.5vw;
+}
+.newsUl li{
+    height: 205/7.5vw;
+    border-bottom: 1px solid #f9fafb;
+}
+.newsZi{
+    margin-top: 35/7.5vw;
+    height: 100/7.5vw;
+    font-size: 34/7.5vw;
+    color: #222222;
+    line-height: 50/7.5vw;
+    overflow: hidden;
+}
+.newsTime{
+    font-size: 22/7.5vw;
+    color: #aab2b9;
+    margin-top: 25/7.5vw;
+}
+.footMenu{
+    width: 100%;
+    height: 100/7.5vw;
+    position: fixed;
+    bottom: 0;
+    z-index: 13;
+    background: #FFFFFF;
+    border-top: 1px solid #e0e0e0;
+}
+.footUl li{
+    width: 20%;
+    text-align: center;
+    span{
+        font-size: 20/7.5vw;
+        color: #9b9b9b;
+    }
+}
+.footImg{
+    width: 40/7.5vw;
+    height: 40/7.5vw;
+    margin: 10/7.5vw auto 0;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.footImgOne{
+    width: 104/7.5vw;
+    height: 55/7.5vw;
+    margin: 25/7.5vw auto 0;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//时政新闻
+.currentContent{
+    padding: 0 35/7.5vw 100/7.5vw;
+}
+.currentnewsUl li{
+//  height: 223/7.5vw;
+    border-bottom: 1px solid #f9fafb;
+    padding-bottom: 40/7.5vw;
+}
+.newsLeft{
+    width: 410/7.5vw;
+}
+.newsRight{
+    width: 224/7.5vw;
+    height: 147/7.5vw;
+    margin-top: 40/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.currentImgbox{
+    width: 224/7.5vw;
+    height: 147/7.5vw;
+    margin-right: 3/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.currentImgbox:last-child{
+    margin-right: 0;
+}
+
+//盟市新闻
+
+.boxImg{
+    margin-top: 30/7.5vw;
+    width: 100%;
+    height: 385/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//政务公开-领导讲话
+.newsMenuTwo{
+    margin-top: 20/7.5vw;
+    font-size: 20/7.5vw;
+    padding:0 10/7.5vw;
+}
+.newsMenuTwoStyle{
+    background: #f9f9f9 !important;
+    border-radius: 3px !important;
+    color: #939395 !important;
+}
+.newsMenuTwoStyleActive{
+    background: #2c93f2 !important;
+    border-radius: 3px !important;
+    color: #fff !important;
+}
+
+//机会
+.outBox{
+    position: relative;
+    z-index: 1;
+}
+.oppbigBox{
+    background: #f1f1f1;
+    position: relative;
+    z-index: 2;
+}
+.oppmessageBox{
+    position: relative;
+    z-index: 4;
+}
+.search{
+    margin-left: 30/7.5vw;
+    margin-top: 25/7.5vw;
+    position: relative;
+    input{
+        width: 518/7.5vw;
+        height: 52/7.5vw;
+        padding-left: 60/7.5vw;
+        background: rgba(255,255,255,0.5);
+        border-radius: 5px;
+        outline: 0;
+        border: 0;
+        color: #FFFFFF;
+    }
+    input::-webkit-input-placeholder{
+        color: #FFFFFF;
+    }
+}
+.searchImg{
+    width: 27/7.5vw;
+    height: 27/7.5vw;
+    position: absolute;
+    left: 20/7.5vw;
+    top: 5/7.5vw;
+    z-index: 2;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.oppContent{
+    position: relative;
+    height: 300/7.5vw;
+}
+.opportunityImg{
+    height: 300/7.5vw;
+    position: absolute;
+    z-index: 1;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.publishBtn{
+    position: absolute;
+    width: 153/7.5vw;
+    height: 56/7.5vw;
+    background: #301757;
+    color: #FFFFFF;
+    line-height: 56/7.5vw;
+    text-align: center;
+    font-size: 24/7.5vw;
+    z-index: 3;
+    border-radius: 28/7.5vw;
+    top: 25/7.5vw;
+    right: 20/7.5vw;
+}
+.oppMenu{
+    padding: 35/7.5vw 0;
+    background: #FFFFFF;
+}
+.oppMenuUl li{
+    width: 25%;
+    text-align: center;
+}
+.oppMenuImg{
+    margin: 0 auto;
+    width: 76/7.5vw;
+    height: 76/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.oppMenuImg3{
+    margin: 0 auto;
+    width: 60/7.5vw;
+    height: 76/7.5vw;
+    img{
+        width: 100%;
+//      height: 100%;
+    }
+}
+.oppMenuImg4{
+    margin: 0 auto;
+    width: 90/7.5vw;
+    height: 76/7.5vw;
+    img{
+        width: 100%;
+//      height: 100%;
+    }
+}
+.oppZi{
+    margin-top: 25/7.5vw;
+    font-size: 26/7.5vw;
+    color: #3f3f3f;
+}
+.partnerBox{
+    margin-top: 15/7.5vw;
+    height: 124/7.5vw;
+    background: #FFFFFF;
+    padding: 0 25/7.5vw;
+}
+.partnerImg{
+    width: 64/7.5vw;
+    height: 64/7.5vw;
+    border-radius: 32/7.5vw;
+    overflow: hidden;
+    margin-top: 33/7.5vw;
+}
+.partnerZi{
+    margin-left: 20/7.5vw;
+    margin-top: 33/7.5vw;
+}
+.partnerName{
+    font-size: 26/7.5vw;
+    color: #000000;
+}
+.partnerAdss{
+    font-size: 22/7.5vw;
+    color: #676767;
+}
+.partnerZitwo{
+    font-size: 22/7.5vw;
+    color: #2c93f2;
+    line-height: 124/7.5vw;
+}
+.hotOpp{
+    margin-top: 15/7.5vw;
+    background: #FFFFFF;
+    padding: 25/7.5vw 20/7.5vw 100/7.5vw;
+}
+.titleBox{
+    height: 42/7.5vw;
+    line-height: 42/7.5vw;
+}
+.titleName{
+    border-left: 10/7.5vw solid #24afff;
+    border-radius: 3/7.5vw;
+    padding-left: 15/7.5vw;
+    font-size: 30/7.5vw;
+    color: #000000;
+}
+.more{
+    font-size: 24/7.5vw;
+    color: #000000;
+}
+.hotMenu{
+    height: 100%;
+}
+.hotMenu li{
+    padding: 30/7.5vw 0;
+    height: 318/7.5vw;
+    border-bottom: 1px solid #f2f2f2;
+}
+.topBox{
+    height: 96/7.5vw;
+}
+.tuijie{
+    width: 32/7.5vw;
+    height: 64/7.5vw;
+    margin-top: 10/7.5vw;
+    margin-left: 10/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.hotHead{
+    margin-left: 25/7.5vw;
+    width: 90/7.5vw;
+    height: 90/7.5vw;
+    border-radius: 45/7.5vw;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.hotMessage{
+    margin-left: 20/7.5vw;
+}
+.hotName{
+    font-size: 26/7.5vw;
+    color: #000000;
+    line-height: 52/7.5vw;
+}
+.middleBox{margin-top: 40/7.5vw;}
+.hotContent{
+    font-size: 28/7.5vw;
+    color: #000000;
+    line-height: 40/7.5vw;
+    overflow: hidden;
+}
+.hotAdress{
+    font-size: 22/7.5vw;
+    color: #676767;
+    line-height: 45/7.5vw;
+}
+.bottomBox{
+    margin-top: 28/7.5vw;
+    height: 37/7.5vw;
+    line-height: 37/7.5vw;
+}
+.eyeBox{
+    margin-top: 8/7.5vw;
+    width: 30/7.5vw;
+    height: 22/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.bottomZi{
+    margin: 8/7.5vw 28/7.5vw 0 14/7.5vw;
+    font-size: 22/7.5vw;
+    color: #b0b0b0;
+}
+.zanBox{
+    margin-top: 6/7.5vw;
+    width: 30/7.5vw;
+    height: 28/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.mesBox{
+    margin-top: 8/7.5vw;
+    width: 30/7.5vw;
+    height: 30/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+//发布机会弹窗
+
+.publishOpp{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(102,102,102,0.8);
+    position: fixed;
+    top: 0;
+    left:  0;
+    z-index: 15;
+}
+.tankuang{
+    width: 700/7.5vw;
+    height: 440/7.5vw;
+    padding-top: 100/7.5vw;
+    border-radius: 20/7.5vw;
+    margin: auto;
+    background: #FFFFFF;
+    margin-top: 350/7.5vw;
+}
+.closeImg{
+    width: 80/7.5vw;
+    height: 80/7.5vw;
+    margin: 40/7.5vw auto 0;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.xuBox{
+    margin-left: 130/7.5vw;
+    width: 152/7.5vw;
+    text-align: center;
+}
+.xuImg{
+    width: 152/7.5vw;
+    height: 152/7.5vw;
+    border-radius: 76/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.xuZi{
+    font-size: 26/7.5vw;
+    color: #a7a7a7;
+    margin-top: 35/7.5vw;
+}
+.tipMessage{
+    padding: 0 64/7.5vw;
+    color: #0d0d0d;
+    font-size: 26/7.5vw;
+    margin-top: 50/7.5vw;
+    line-height: 46/7.5vw;
+    text-align: center;
+}
+
+//机会--搜索
+.serachUl li{
+    height: 285/7.5vw;
+    padding: 30/7.5vw;
+    background: #FFFFFF;
+    margin-bottom: 20/7.5vw;
+}
+.hotHeadOne{
+    width: 90/7.5vw;
+    height: 90/7.5vw;
+    border-radius: 45/7.5vw;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.blueColor{color: #2c93f2;}
+.searchLeft{
+    width: 527/7.5vw;
+    height: 120/7.5vw;
+}
+.searchTitle{
+    margin-top: 36/7.5vw;
+    width: 100%;
+    height: 40/7.5vw;
+    line-height: 40/7.5vw;
+    overflow: hidden;
+    font-size: 26/7.5vw;
+    color: #232323;
+}
+.searchAdss{
+    margin-top: 18/7.5vw;
+    width: 100%;
+    height: 40/7.5vw;
+    font-size: 26/7.5vw;
+    color: #797979;
+    overflow: hidden;
+}
+.searchRight{
+    width: 140/7.5vw;
+    height: 110/7.5vw;
+    margin-top: 10/7.5vw;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//机会--投融资
+.finaceBox{
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+.finaceCoontent{
+    padding: 0 30/7.5vw;
+    background: #FFFFFF;
+}
+.finaceTitle{
+    height: 160/7.5vw;
+    background: url(../image/jn-image/bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 0 25/7.5vw;
+}
+
+.finaceMeauOne{
+    height: 53/7.5vw;
+    margin-top: 23/7.5vw;
+}
+.finaceUlOne li{
+    width: 25%;
+    text-align: center;
+    line-height: 50/7.5vw;
+    font-size: 32/7.5vw;
+    color: #ffffff;
+}
+.finaceUlOneActive{
+    color: #fffe69;
+    border-bottom: 6/7.5vw solid #fffe69;
+}
+.finaceMeau{
+    background: #FFFFFF;
+    margin-top: 5/7.5vw;
+}
+.finaceUl li{
+    width: 49.7%;
+    padding: 22/7.5vw 0;
+    text-align: center;
+    font-size: 26/7.5vw;
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    color: #666666;
+}
+.finaceUl li:last-child{
+    border-right:0;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <title>行会商会--详情</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+    <style type="text/css">
+    	.swiper-container {
+	      width: 100%;
+	      height: 100%;
+	    }
+	    .swiper-container img{
+	      width: 100%;
+	      height: 100%;
+	    }
+	    .swiper-slide {
+	      text-align: center;
+	      font-size: 18px;
+	      background: #fff;
+
+	      /* Center slide text vertically */
+	      display: -webkit-box;
+	      display: -ms-flexbox;
+	      display: -webkit-flex;
+	      display: flex;
+	      -webkit-box-pack: center;
+	      -ms-flex-pack: center;
+	      -webkit-justify-content: center;
+	      justify-content: center;
+	      -webkit-box-align: center;
+	      -ms-flex-align: center;
+	      -webkit-align-items: center;
+	      align-items: center;
+	    }
+    </style>
+</head>
+<body>
+	<div class="detail">
+		<div class="detailBox">
+			<!--头部搜索-->
+			<div class="detailSearch">
+				<div class="detailSearchBox">
+					<div class="back pull-left">
+						<img src="../image/back.png"/>
+					</div>
+					<div class="searchdetali pull-left">
+						<div class="searchImg"><img src="../image/search1.png"/></div>
+						<input type="text" name="" id="" value="" placeholder="请输入关键词"/>
+					</div>
+					<div class="homeImg pull-left">
+						<img src="../image/home.png"/>
+					</div>
+				</div>
+
+			</div>
+			<!--菜单-->
+			<div class="detailMenu">
+				<ul class="detailUl clear">
+					<li class="pull-left">
+						<div class="detailImg">
+							<img src="../image/detailMenu1.png" alt="" />
+						</div>
+						<span>商会概况</span>
+					</li>
+					<li class="pull-left">
+						<div class="detailImg">
+							<img src="../image/detailMenu2.png" alt="" />
+						</div>
+						<span>商会联盟</span>
+					</li>
+					<li class="pull-left">
+						<div class="detailImg">
+							<img src="../image/detailMenu3.png" alt="" />
+						</div>
+						<span>入会申请</span>
+					</li>
+					<li class="pull-left">
+						<div class="detailImg">
+							<img src="../image/detailMenu4.png" alt="" />
+						</div>
+						<span>学习中心</span>
+					</li>
+					<li class="pull-left">
+						<div class="detailImg">
+							<img src="../image/detailMenu5.png" alt="" />
+						</div>
+						<span>商会企业</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--商会公告-->
+		<div class="noticeBox clear">
+			<div class="noticeLeft pull-left">
+				<img src="../image/noticeTitle.png" alt="" />
+			</div>
+			<div class="noticeRight pull-left">
+				把脉经济形势展望美好未来——内蒙古  <br />
+				陕西商会2018年工作总结会圆满召开 !
+			</div>
+		</div>
+		<!--商会活动-->
+		<div class="activitBox">
+			<div class="titleBox clear">
+				<div class="titleName pull-left">
+					商会活动
+				</div>
+				<div class="more pull-right">查看更多 >></div>
+			</div>
+			<div class="activitImg">
+				<div class="swiper-container" id="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<img src="../image/del1.png" alt="" />
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="../image/del2.png" alt="" />
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="../image/del2.png" alt="" />
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!--商会动态-->
+		<div class="dynamicBox">
+			<div class="titleBox clear">
+				<div class="titleName pull-left">
+					商会动态
+				</div>
+				<div class="more pull-right">查看更多 >></div>
+			</div>
+			<div class="dynamicContent">
+				<ul class="dynamicUl">
+					<li class="clear">
+						<img src="../image/yuan.png" alt="" class="pull-left yuan"/>
+						<span class="pull-left spanOne">各省商会领导联谊交流会在桂商总会举行</span>
+						<span class="pull-right spanTwo">2019-06-10</span>
+					</li>
+					<li class="clear">
+						<img src="../image/yuan.png" alt="" class="pull-left yuan"/>
+						<span class="pull-left spanOne">各省商会领导联谊交流会在桂商总会举行</span>
+						<span class="pull-right spanTwo">2019-06-10</span>
+					</li>
+					<li class="clear">
+						<img src="../image/yuan.png" alt="" class="pull-left yuan"/>
+						<span class="pull-left spanOne">各省商会领导联谊交流会在桂商总会举行</span>
+						<span class="pull-right spanTwo">2019-06-10</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="../js/swiper.min.js"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('#swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      slidesPerGroup: 2,
+      loop: true,
+      autoplay:true
+   });
+</script>

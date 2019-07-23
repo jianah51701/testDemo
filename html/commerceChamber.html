@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <title>商会动态</title>
+    <link rel="stylesheet" href="../css/news.css">
+</head>
+<body>
+	<div class="bigBox">
+		<div class="messageBox">
+			<!--头部-->
+			<div class="newsTitle clear">
+				<div class="newsback pull-left">
+					<img src="../image/jn-image/back.png" alt="" />
+				</div>
+				<div class="biaoti pull-left">
+					<img src="../image/jn-image/shdt.png" alt="" />
+				</div>
+				<div class="person pull-right">
+					<img src="../image/jn-image/person.png"/>
+				</div>
+			</div>
+			<!--内容-->
+			<div class="currentContent">
+				<ul class="currentnewsUl">
+					<li class="clear">
+						<div class="pull-left newsLeft">
+							<div class="newsZi">中共中央办公厅 国务院办公厅印发《关于健
+		全行政裁决制度加强行政裁决工作的意见》ffffff</div>
+							<div class="newsTime">新华社  2019-06-12</div>
+						</div>
+						<div class="newsRight pull-right">
+							<img src="../image/jn-image/tu.png" alt="" />
+						</div>
+					</li>
+					<li class="clear">
+						<div class="newsZi">中共中央办公厅 国务院办公厅印发《关于健
+		全行政裁决制度加强行政裁决工作的意见》ffffff</div>
+						<div class="currentImg clear">
+							<div class="currentImgbox pull-left">
+								<img src="../image/jn-image/tu.png" alt="" />
+							</div>
+							<div class="currentImgbox pull-left">
+								<img src="../image/jn-image/tu.png" alt="" />
+							</div>
+							<div class="currentImgbox pull-left">
+								<img src="../image/jn-image/tu.png" alt="" />
+							</div>
+						</div>
+						<div class="newsTime">新华社  2019-06-12</div>
+					</li>
+					<li class="clear">
+						<div class="pull-left newsLeft">
+							<div class="newsZi">中共中央办公厅 国务院办公厅印发《关于健
+		全行政裁决制度加强行政裁决工作的意见》ffffff</div>
+							<div class="newsTime">新华社  2019-06-12</div>
+						</div>
+						<div class="newsRight pull-right">
+							<img src="../image/jn-image/tu.png" alt="" />
+						</div>
+					</li>
+					<li class="clear">
+						<div class="newsZi">中共中央办公厅 国务院办公厅印发《关于健
+		全行政裁决制度加强行政裁决工作的意见》ffffff</div>
+						<div class="currentImg clear">
+							<div class="currentImgbox pull-left">
+								<img src="../image/jn-image/tu.png" alt="" />
+							</div>
+							<div class="currentImgbox pull-left">
+								<img src="../image/jn-image/tu.png" alt="" />
+							</div>
+							<div class="currentImgbox pull-left">
+								<img src="../image/jn-image/tu.png" alt="" />
+							</div>
+						</div>
+						<div class="newsTime">新华社  2019-06-12</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--底部导航-->
+		<div class="footMenu">
+			<ul class="footUl clear">
+				<li class="pull-left">
+					<div class="footImg">
+						<img src="../image/jn-image/foot1.png" alt="" />
+					</div>
+					<span>党的关怀</span>
+				</li>
+				<li class="pull-left">
+					<div class="footImg">
+						<img src="../image/jn-image/foot2.png" alt="" />
+					</div>
+					<span>行会商会</span>
+				</li>
+				<li class="pull-left">
+					<div class="footImgOne">
+						<img src="../image/jn-image/foot3.png" alt="" />
+					</div>
+				</li>
+				<li class="pull-left">
+					<div class="footImg">
+						<img src="../image/jn-image/foot4.png" alt="" />
+					</div>
+					<span>企业服务</span>
+				</li>
+				<li class="pull-left">
+					<div class="footImg">
+						<img src="../image/jn-image/foot5.png" alt="" />
+					</div>
+					<span>个人中心</span>
+				</li>
+			</ul>
+		</div>
+	</div>		
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/swiper.min.js"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('#swiper-containerOne', {
+      slidesPerView: 4,
+      spaceBetween: 8,
+      slidesPerGroup: 3,
+     
+//    autoplay:true
+   });
+   $('.newsMenu .swiper-slide').click(function(){
+   	$(this).siblings().removeClass('newsActive');
+   	$(this).addClass('newsActive');
+   })
+</script>
